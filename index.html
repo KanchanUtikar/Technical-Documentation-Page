@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>
+        CSS Documentation
+      </header>      
+      <ul>
+        <li><a href="#css_introduction" class="nav-link">CSS Introduction</a></li>
+        <li><a class="nav-link" href="#css_syntax">CSS Syntax</a></li>
+        <li><a class="nav-link" href="#css_selectors">CSS Selectors</a></li>
+        <li><a class="nav-link" href="#how_to_add_css">How To Add CSS</a></li>
+        <li><a class="nav-link" href="#css_comment">CSS Comment</a></li>
+        <li><a class="nav-link" href="#css_properties">CSS Properties</a></li>
+        <li><a class="nav-link" href="#css_combinators">CSS Combinators</a></li>
+       
+        <li><a class="nav-link" href="#reference">Reference</a></li>          
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="css_introduction">
+        <header>
+          CSS Introduction
+        </header>
+        <article>
+          <h3>What is CSS?</h3>        
+            <ul>
+              <li>CSS stands for Cascading Style Sheets
+</li>
+              <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+              <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+              <li>External stylesheets are stored in CSS files</li>
+            </ul>
+          <p>
+          CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+          </p>
+        
+        <div>
+          <h3>CSS Example</h3>
+          <code class="code">           
+            &nbsp;&nbsp;body { <br>&nbsp;&nbsp;
+             background-color: lightblue;<br> &nbsp;
+            } <br><br>&nbsp;
+            h1 { <br>&nbsp;&nbsp;
+              color: white; <br> &nbsp;
+              text-align: center; <br> &nbsp;
+            } <br><br>            
+          </code>           
+          </div>
+          </article>       
+      </section>
+
+      <section class="main-section" id="css_syntax">
+        <header>
+          CSS Syntax
+        </header>
+        <article>              
+          <p>A CSS rule consists of a selector and a declaration block.<br>    
+          </p>          
+          <p>The declaration block contains one or more declarations separated by semicolons.</p>
+          <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+          <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+        
+        <div>
+          <h3>CSS Example</h3>
+          <p>In this example all <p> elements will be center-aligned, with a red text color:</p>
+          <code class="code">           
+            &nbsp;&nbsp;p { <br>&nbsp;&nbsp;
+             color: red;<br> &nbsp;
+             text-align: center; <br> &nbsp;
+            } <br><br>         
+          </code>           
+        </div>
+      </article>       
+    </section>
+
+     <section class="main-section" id="css_selectors">
+        <header>
+          CSS Selectors
+        </header>
+        <article>
+          <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+          <p>We can divide CSS selectors into five categories:</p>
+          <h3></h3>    
+	  <ul>
+              <li>Simple selectors (select elements based on name, id, class)</li>
+              <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+              <li>Pseudo-class selectors (select elements based on a certain state)</li>
+              <li>Pseudo-elements selectors (select and style a part of an element)</li>
+              <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            </ul>                 
+       
+          </article>       
+      </section>      
+
+      <section class="main-section" id="how_to_add_css">
+        <header>
+          How To Add CSS 
+        </header>
+        <article>
+          <h3>Three Ways to Insert CSS</h3>
+          <p>There are three ways of inserting a style sheet:</p>    
+	      <ul>
+              <li>External CSS</li>
+              <li>Internal CSS</li>
+              <li>Inline CSS</li>
+            </ul>  
+          <h3>External CSS</h3>  
+          <p>External styles are defined within the <link> element, inside the <head> section of an HTML page    
+          </p>                
+          <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+          <p>The external .css file should not contain any HTML tags.</p>
+
+          <h3>Internal CSS</h3>
+          <p>An internal style sheet may be used if one single HTML page has a unique style.</p>    
+          <p>The internal style is defined inside the element style, inside the head section.</p>   
+
+          <h3>Inline CSS</h3>
+          <p>An inline style may be used to apply a unique style for a single element.</p>
+          <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+          </article>       
+      </section>
+
+      <section class="main-section" id="css_comment">
+        <header>
+          CSS Comment
+        </header>
+        <article>
+          <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+          <p>Comments are ignored by browsers.</p>
+          <p>A CSS comment is placed inside the style element, and starts with /* and ends with */</p>
+        
+        <div>
+          <h3>CSS Example</h3>
+          <p></p>
+          <code class="code">    
+            /* This is a single-line comment */       <br>
+            &nbsp;&nbsp;p { <br>&nbsp;&nbsp;
+             color: red;<br> &nbsp;
+             text-align: center; <br> &nbsp;
+            } <br><br>         
+          </code>           
+          </div>
+          </article>       
+      </section>
+
+      <section class="main-section" id="css_properties">
+        <header>
+          CSS Properties
+        </header>
+        <article>
+          <p>There are lot of CSS properties using which you can style different elements of your html page.</p>
+          <p>Below are some examples of CSS properties:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Explaination</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>color</td>
+                <td>Defines the color of text.</td>
+              </tr>
+              <tr>
+                <td>background-color</td>
+                <td>Defines the background color of html element.</td>
+              </tr>
+              <tr>
+                <td>font-size</td>
+                <td>Defines the size of text.</td>
+              </tr>
+              <tr>
+                <td>text-align</td>
+                <td>Defines horizontal alignment of text i.e. left/ right</td>
+              </tr>
+              <tr>
+                <td>width</td>
+                <td>Defines width of html element.</td>
+              </tr>
+            </tbody>
+          </table>  
+        </article>       
+      </section>
+
+      <section class="main-section" id="css_combinators">
+        <header>
+          CSS Combinators
+        </header>
+        <article>
+          <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+          <h3>There are four different combinators in CSS:</h3>    
+	  <ul>
+              <li>Descendant combinator (space)</li>
+              <li>Child combinator (>)</li>
+              <li>Next sibling combinator (+)</li>
+              <li>Subsequent-sibling combinator (~)</li>
+            </ul>  
+            <h3>Descendant combinator (space)</h3>  
+          <p>The descendant combinator matches all elements that are descendants of a specified element.    
+          </p>          
+          <p>The following example selects all p elements inside div elements: </p>
+                
+        <div>
+          <h3>Example:</h3>
+          <code class="code">           
+            &nbsp;&nbsp;
+            div p { <br> &nbsp;&nbsp;&nbsp;
+             color: lightblue;<br> &nbsp;
+             
+            } <br><br>         
+          </code>           
+          </div>
+
+          <h3>Child combinator (>)</h3>
+          <p>The child combinator selects all elements that are the children of a specified element.</p>
+          <p>The following example selects all p elements that are children of a div element:</p>
+          <div>
+          <h3>Example:</h3>
+          <code class="code">           
+            &nbsp;&nbsp;
+            div > p { <br> &nbsp;&nbsp;&nbsp;
+             color: lightblue;<br> &nbsp;
+             
+            } <br><br>         
+          </code>           
+          </div>
+
+          <h3>Next sibling combinator (+)</h3>
+          <p>The next sibling combinator is used to select an element that is directly after another specific element.</p>
+          <p>The following example selects the first p element that are placed immediately after div elements:</p>
+          <div>
+          <h3>Example:</h3>
+          <code class="code">           
+            &nbsp;&nbsp;
+            div + p { <br> &nbsp;&nbsp;&nbsp;
+             color: lightblue;<br> &nbsp;
+             
+            } <br><br>         
+          </code>           
+          </div>
+
+          <h3>Subsequent-sibling combinator (~)</h3>
+          <p>The subsequent-sibling combinator selects all elements that are next siblings of a specified element.</p>
+          <p>The following example selects all p elements that are next siblings of div elements:</p>
+          <div>
+          <h3>Example:</h3>
+          <code class="code">           
+            &nbsp;&nbsp;
+            div ~ p { <br> &nbsp;&nbsp;&nbsp;
+             color: lightblue;<br> &nbsp;
+             
+            } <br><br>         
+          </code>           
+          </div>
+          </article>       
+      </section>
+
+      <section class="main-section" id="reference">
+        <header>Reference</header>
+        <ul>
+          <li>Learn more about <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a> here.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
